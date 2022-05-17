@@ -1,40 +1,87 @@
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e9a6a6;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 button {
-    background: none;
-    border: none;
-    outline: none;
+  background: none;
+  border: none;
+  outline: none;
 }
 button:hover {
-    cursor: pointer;
-    background-color: rgb(38, 194, 221) ;
+  cursor: pointer;
+  background-color: rgb(38, 194, 221);
 }
 .App {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.board .board-row {
-      display: flex;
-      flex-direction: row;
-      border-bottom: 2px solid #000;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.board .board-row:last-child{
-    border-bottom: none;
-} 
+.board .board-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #000;
+}
+.board .board-row:last-child {
+  border-bottom: none;
+}
 .square {
-    width: 80px;
-    height: 80px;
-    border-right: 2px solid #000;
-    font-size: 2.5rem;
-    padding: 0;
-    overflow: hidden;
-    transition: all 0.2s;
-}   
-.square:last-child{
-    border-right: none;
+  width: 80px;
+  height: 80px;
+  border-right: 2px solid #000;
+  font-size: 2.5rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.square:last-child {
+  border-right: none;
+}
+
+.board {
+  background-color: #637e98;
+  color: #fff;
+  border: 6px solid #0d2b49;
+  border-radius: 10px;
+}
+
+.message {
+  color: #5f0606;
+  background-color: #f1f1f1;
+  padding: 2px 15px 2px 15px;
+  border-radius: 15px;
+}
+.newgame {
+  margin-top: 10px;
+  color: #5f0606;
+  background-color: #f1f1f1;
+  padding: 15px 25px 15px 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  border-radius: 15px;
+}
+.history {
+  margin-top: 10px;
+  color: #5f0606;
+}
+.item {
+  font-family:  Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 15px;
+  padding: 1px 5px 1px 5px;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+}
+h3 {
+    border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  background-color: #bc7272;
 }

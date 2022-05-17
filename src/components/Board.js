@@ -1,16 +1,20 @@
 import React from "react";
 import Square from "./Square";
 
-function Board({board,handleClick}) {
+function Board({board,handleClick,winningSquares}) {
 
-    const renderSquare = (position) => {
-        return (
-          <Square
-            cellNumber={board[position]}
-            onClick={() => handleClick(position)}
-          />
-        );
-      };
+
+    function renderSquare(position) {
+    const isWinningSquare=winningSquares.includes(position);
+
+    return (
+      <Square
+        cellNumber={board[position]}
+        onClick={() => handleClick(position)}
+        isWinningSquare={isWinningSquare}
+        />
+    );
+  }
 
   return (
     <div className="board">
